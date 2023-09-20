@@ -1,0 +1,62 @@
+@keyframes Articles {
+    0% {
+        width: 40px;
+        transform: translateX(0%);
+    }
+
+    100% {
+        width: 40px;
+        transform: translateX(calc(100% - 40px));
+    }
+}
+
+@keyframes Photos {
+    0% {
+        transform: translateX(calc(100% - 40px));
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.navigation {
+    width: 100%;
+}
+
+.navigation .buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin: auto;
+}
+
+.navigation .buttons * {
+    outline: 0;
+    border: 0;
+    background: transparent;
+    font-size: 24px;
+    color: var(--dark-font-color);
+    transition: color 200ms;
+    padding: 0;
+}
+
+.navigation svg {
+    display: block;
+    width: 200px;
+    height: 20px;
+    margin: auto;
+}
+
+.navigation svg rect {
+    width: 40px;
+    height: 8px;
+    fill: var(--dark-accent-color);
+}
+
+@media (any-hover: hover) {
+    .navigation .buttons *:hover {
+        color: var(--dark-accent-color);
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "OppySans";
+    src: local("OpenSans"),
+         url(assets/fonts/Open_Sans/OpenSans.ttf);
+}
+
+@font-face {
+    font-family: "OppySansItalic";
+    src: local("OpenSans-Italic"),
+         url(assets/fonts/Open_Sans/OpenSansItalic.ttf);
+}
+
+:root {
+    --darker-bg-color: #2e3440;
+    --dark-bg-color: #3b4252;
+    --dark-font-color: #eceff4;
+    --dark-accent-color: #81a1c1;
+}
+
+html, body {
+    margin: 0 0 1.5cm 0;
+    font-family: "OppySans", sans-serif;
+    background-color: var(--dark-bg-color);
+    color: var(--dark-font-color);
+}
+
+#cover {
+    width: 100%;
+    height: 150px;
+    background-image: url(assets/images/cover-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    #cover {
+        height: 250px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #cover {
+        height: 350px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    #cover {
+        height: 450px;
+        background-size: 1500px;
+    }
+}

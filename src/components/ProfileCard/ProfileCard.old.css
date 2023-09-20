@@ -1,0 +1,100 @@
+.profileCard {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.profileCard div:first-child {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.profileCard img {
+    display: block;
+    align-self: center;
+    width: 150px;
+    height: 150px;
+    margin: 15px;
+    border-radius: 50%;
+    border: 0.5rem solid var(--dark-accent-color);
+}
+
+.profileCard .name {
+    display: block;
+    text-align: center;
+    padding: 5px;
+    font-size: 0.7cm;
+    font-weight: bold;
+    font-synthesis: none;
+}
+
+.profileCard .occupations {
+    display: block;
+    text-align: center;
+    padding: 5px;
+    font-family: "OppySansItalic", sans-serif;
+    font-size: 0.5cm;
+    color: #d8dee9;
+}
+
+.profileCard .bio {
+    margin: 0;
+    padding: 20px;
+    font-size: 0.5cm;
+}
+
+.profileCard .buttons {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+}
+
+.profileCard .buttons button {
+    font-family: inherit;
+    border: 2px solid var(--dark-accent-color);
+    background-color: transparent;
+    border-radius: 0.5cm;
+    padding: 8px;
+    font-size: 0.5cm;
+    color: #eceff4;
+    transition: background-color 0.15s, color 0.15s;
+}
+
+.profileCard .buttons button:hover {
+    background-color: var(--dark-accent-color);
+    color: var(--dark-bg-color);
+}
+
+.profileCard .buttons button:active {
+    outline: none;
+    background-color: var(--dark-accent-color);
+    color: var(--dark-bg-color);
+}
+
+@media screen and (min-width: 768px) {
+    .profileCard {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .profileCard div:first-child {
+        flex: 1 1 0;
+        justify-content: center;
+    }
+
+    .profileCard div:last-child {
+        flex: 1 1 0;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .profileCard {
+        width: 50%;
+        margin: auto;
+    }
+
+    .profileCard img {
+        width: 250px;
+        height: 250px;
+    }
+}

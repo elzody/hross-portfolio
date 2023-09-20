@@ -1,0 +1,26 @@
+{
+    "name": "Heather M. Ross",
+    "avatar": "assets/images/heathermross.jpg",
+    "bio": "I am a journalist and photographer with experience writing and covering news in Philadelphia, Baltimore and D.C.",
+    "occupations": [
+        "Journalist",
+        "Photographer"
+    ],
+    "pronouns": [
+        "they/them",
+        "he/him",
+        "she/her"
+    ],
+    "social": [
+        {
+            "name": "facebook",
+            "link": "https://www.facebook.com/heather.ross.9619",
+            "image": "assets/images/square-facebook.svg"
+        },
+        {
+            "name": "twitter",
+            "link": "https://twitter.com/MarkMorriRoss",
+            "image": "assets/images/square-twitter.svg"
+        }
+    ]
+}
