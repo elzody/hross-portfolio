@@ -19,12 +19,14 @@ const Photo = (props: PhotoProps) => {
         threshold: 0.1
     }
 
-    const intersect_callback = (entries, observer) => {
+    const intersect_callback = (entries: IntersectionObserverEntry[], _observer: IntersectionObserver) => {
         const [ entry ] = entries;
 
         setPhotoVisibility(entry.isIntersecting);
         
-        entry.target.style["opacity"] = (entry.isIntersecting) ? "1.0" : "0.0";
+        const photo_element = entry.target as HTMLElement;
+
+        photo_element.style["opacity"] = (entry.isIntersecting) ? "1.0" : "0.0";
     }
 
     useEffect(() => {

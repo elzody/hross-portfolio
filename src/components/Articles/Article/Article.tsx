@@ -9,7 +9,7 @@ interface ArticleProps {
 
 const Article = (props: ArticleProps) => {
     return (
-//        <a href={props.link} target="_blank">
+        <a href={props.link} target="_blank">
             <article className="article">
                 <img src={props.image} alt={props.title} />
 
@@ -21,7 +21,7 @@ const Article = (props: ArticleProps) => {
 
                 <span className="link">{props.link}</span>
             </article>
-//        </a>
+        </a>
     );
 }
 
